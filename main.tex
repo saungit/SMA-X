@@ -631,148 +631,259 @@ Setiap masalah memiliki bentuknya masing-masing. Tidak sesuai soal dapat diseles
 
 \chapter{Linear Tiga Variabel}
 
-\section{Theorems}\index{Theorems}
-
-This is an example of theorems.
-
-\subsection{Several equations}\index{Theorems!Several Equations}
-This is a theorem consisting of several equations.
-
-\begin{theorem}[Name of the theorem]
-In $E=\mathbb{R}^n$ all norms are equivalent. It has the properties:
-\begin{align}
-& \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
-&  ||\sum_{i=1}^n\mathbf{x}_i||\leq \sum_{i=1}^n||\mathbf{x}_i||\quad\text{where $n$ is a finite integer}
-\end{align}
-\end{theorem}
-
-\subsection{Single Line}\index{Theorems!Single Line}
-This is a theorem consisting of just one line.
-
-\begin{theorem}
-A set $\mathcal{D}(G)$ in dense in $L^2(G)$, $|\cdot|_0$. 
-\end{theorem}
-
-%------------------------------------------------
-
-\section{Definitions}\index{Definitions}
-
-This is an example of a definition. A definition could be mathematical or it could define a concept.
-
-\begin{definition}[Definition name]
-Given a vector space $E$, a norm on $E$ is an application, denoted $||\cdot||$, $E$ in $\mathbb{R}^+=[0,+\infty[$ such that:
-\begin{align}
-& ||\mathbf{x}||=0\ \Rightarrow\ \mathbf{x}=\mathbf{0}\\
-& ||\lambda \mathbf{x}||=|\lambda|\cdot ||\mathbf{x}||\\
-& ||\mathbf{x}+\mathbf{y}||\leq ||\mathbf{x}||+||\mathbf{y}||
-\end{align}
-\end{definition}
-
-%------------------------------------------------
-
-\section{Notations}\index{Notations}
-
-\begin{notation}
-Given an open subset $G$ of $\mathbb{R}^n$, the set of functions $\varphi$ are:
-\begin{enumerate}
-\item Bounded support $G$;
-\item Infinitely differentiable;
-\end{enumerate}
-a vector space is denoted by $\mathcal{D}(G)$. 
-\end{notation}
-
-%------------------------------------------------
-
-\section{Remarks}\index{Remarks}
-
-This is an example of a remark.
-
-\begin{remark}
-The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
-\end{remark}
-
-%------------------------------------------------
-
 \section{Corollaries}\index{Corollaries}
 
-This is an example of a corollary.
-
-\begin{corollary}[Corollary name]
-The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
-\end{corollary}
-
 %------------------------------------------------
 
-\section{Propositions}\index{Propositions}
+\section{Penerapan Sistem Persamaan Linear Tiga Variabel}\index{Penerapan Sistem Persamaan Linear Tiga Variabel}
 
-This is an example of propositions.
 
-\subsection{Several equations}\index{Propositions!Several Equations}
+\noindent \textbf{CONTOH SOAL PERSAMAAN LINEAR 3 VARIABEL}
 
-\begin{proposition}[Proposition name]
-It has the properties:
-\begin{align}
-& \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
-&  ||\sum_{i=1}^n\mathbf{x}_i||\leq \sum_{i=1}^n||\mathbf{x}_i||\quad\text{where $n$ is a finite integer}
-\end{align}
-\end{proposition}
+\noindent \textbf{}
 
-\subsection{Single Line}\index{Propositions!Single Line}
+\noindent \textbf{Contoh 1: Memodelkan Permasalahan Keuangan}
 
-\begin{proposition} 
-Let $f,g\in L^2(G)$; if $\forall \varphi\in\mathcal{D}(G)$, $(f,\varphi)_0=(g,\varphi)_0$ then $f = g$. 
-\end{proposition}
+\noindent Suatu perusahaan rumahan meminjam Rp 2.250.000.000,00 dari tiga bank yang berbeda untuk memperluas jangkauan bisnisnya. Suku bunga dari ketiga bank tersebut adalah 5\%, 6\%, dan 7 \%. Tentukan berapa pinjaman perusahaan tersebut terhadap masing-masing bank jika bunga tahunan yang harus dibayar perusahaan tersebut adalah Rp 130.000.000,00 dan banyaknya uang yang dipinjam dengan bunga 5\% sama dengan dua kali uang yang dipinjam dengan bunga 7\%?
+
+\noindent \textbf{}
+
+\noindent \textbf{Pembahasan}~Misalkan~\textit{x},~\textit{y}, dan~\textit{z}~secara berturut-turut adalah banyaknya uang yang dipinjam dengan bunga 5\%, 6\%, dan 7\%. Ini berarti yang menjadi persamaan pertama kita adalah~\textit{x}~+~\textit{y}~+~\textit{z}~= 2.250 (dalam jutaan). Persamaan kedua diperoleh dari total bunga pertahunnya, yaitu Rp 130.000.000,00: 0,05\textit{x}~+ 0,06\textit{y}~+ 0,07\textit{z}~= 130. Sedangkan persamaan ketiga dapat diperoleh dari kalimat, ``banyaknya uang yang dipinjam dengan bunga 5\% sama dengan dua kali uang yang dipinjam dengan bunga 7\%'', sehingga persamaannya adalah~\textit{x}~= 2\textit{z}. Ketiga persamaan tersebut membentuk sistem seperti berikut.
+
+\noindent 
+
+\noindent 
+
+\noindent Suku-\textit{x}~pada persamaan pertama adalah 1. Apabila dituliskan kembali ke dalam bentuk standar, sistem tersebut akan menjadi
+
+\noindent 
+
+\noindent 
+
+\noindent Gunakan --5\textit{P}1 +~\textit{P}2 untuk mengeliminasi suku-\textit{x}~di P2, dan --P1 + P3 untuk mengeliminasi suku-\textit{x}~di P3.
+
+\noindent 
+
+\noindent Sehingga,~\textit{P}2 yang baru adalah~\textit{y}~+ 2\textit{z}~= 1.750 dan~\textit{P}3 yang baru adalah~\textit{y}~+ 3\textit{z}~= 2.250 (setelah dikalian dengan --1), yang menghasilkan sistem berikut.
+
+\noindent 
+
+\noindent 
+
+\noindent Dengan menyelesaikan subsistem 2 $\times$ 2 (dua persamaan terakhir) menggunakan --\textit{P}2 +~\textit{P}3 menghasilkan~\textit{z}~= 500. Selanjutnya dengan menerapkan substitusi balik akan menghasilkan~\textit{x}~= 1.000 dan~\textit{y}~= 750. Diperoleh selesaian SPLTV tersebut adalah (1.000, 750, 500). Ini berarti bahwa perusahaan tersebut meminjam 1 miliar rupiah pada bunga 5\%, 750 juta rupiah pada bunga 6\%, dan 500 juta rupiah pada bunga 7\%.
+
+\noindent Sumber :https://yos3prens.wordpress.com/2013/11/10/5-soal-dan-pembahasan-penerapan-spltv/
+
+\noindent \textbf{}
+
+\noindent \textbf{Contoh 2: Permasalahan Masa Kehamilan Hewan}
+
+\noindent Masa kehamilan rata-rata (dalam hari) dari gajah, badak, dan unta apabila dijumlahkan adalah 1.520 hari. Masa kehamilan badak adalah 58 hari lebih lama daripada unta. Dua kali masa kehamilan unta kemudian dikurangi 162 merupakan masa kehamilan gajah. Berapa hari masa kehamilan dari masing-masing hewan tersebut?
+
+\noindent \textbf{}
+
+\noindent \textbf{Pembahasan}~Misalkan~\textit{x},~\textit{y}, dan~\textit{z}~secara berturut-turut adalah masa kehamilan gajah, badak, dan unta. Sehingga, persamaan pertama kita adalah~\textit{x}~+~\textit{y}~+~\textit{z}~= 1.520. Karena masa kehamilan badak 58 hari lebih lama daripada unta, maka persamaan keduanya adalah~\textit{y}~=~\textit{z}~+ 58. Sedangkan dari kalimat, ``Dua kali masa kehamilan unta kemudian dikurangi 162 merupakan masa kehamilan gajah'', diperoleh persamaan ketiganya adalah~\textit{x}~= 2\textit{z}~-- 162. Ketiga persamaan tersebut membentuk sistem sebagai berikut.
+
+\noindent Suku-\textit{x}~pada persamaan pertama adalah 1. Apabila dituliskan kembali ke dalam bentuk standar, sistem tersebut akan menjadi
+
+\noindent 
+
+\noindent 
+
+\noindent Eliminasi suku-\textit{x}~pada~\textit{P}3 dengan~\textit{P}1 + (--\textit{P}3) (\textit{P}2 tidak memiliki suku-\textit{x}) akan diperoleh persamaan~\textit{y}~+ 3\textit{z}~= 1.682. Sehingga SPLTV di atas ekuivalen dengan SPLTV,
+
+\noindent 
+
+\noindent 
+
+\noindent Selanjutnya kita dapat menyelesaikan subsistem 2 $\times$ 2 dan diperoleh~\textit{z}~= 406. Dengan menerapkan substitusi balik akan menghasilkan~\textit{x}~= 650 dan~\textit{y}~= 464, sehingga selesaian dari SPLTV di atas adalah (650, 464, 406). Jadi, masa kehamilan rata-rata dari gajah, badak, dan unta secara berturut-turut adalah 650 hari, 464 hari, dan 406 hari.
+
+\noindent Sumber :https://yos3prens.wordpress.com/2013/11/10/5-soal-dan-pembahasan-penerapan-spltv/
+
+\noindent 
+
+\noindent \textbf{Contoh 3: Teka-teki Sejarah Indonesia}
+
+\noindent Sampai saat ini, bangsa Indonesia telah mengalami peristiwa-peristiwa sejarah yang patut diketahui, tiga diantaranya adalah kedatangan Belanda di bawah pimpinan Cornelis De Houtman, lahirnya R.A. Kartini, dan lahirnya Surat Perintah Sebelas Maret (Supersemar). Jika kita menjumlahkan tahun terjadinya ketiga peristiwa tersebut maka kita akan mendapatkan 5.441. Supersemar lahir 87 tahun setelah lahirnya tokoh emansipasi wanita Indonesia, R. A. Kartini, dan 370 tahun setelah kedatangan Belanda di bawah pimpinan Cornelis De Houtman. Pada tahun berapa masing-masing peristiwa sejarah tersebut terjadi?
+
+\noindent 
+
+\noindent \textbf{Pembahasan}~Misalkan~\textit{a},~\textit{b}, dan~\textit{c}~secara berturut-turut adalah tahun terjadinya peristiwa kedatangan Belanda di bawah pimpinan Cornelis De Houtman, lahirnya R.A. Kartini, dan lahirnya Supersemar. Maka kita akan mendapatkan SPLTV sebagai berikut.
+
+\noindent 
+
+\noindent 
+
+\noindent SPLTV di atas memiliki bentuk standar seperti berikut.
+
+\noindent 
+
+\noindent 
+
+\noindent Dengan menggunakan~\textit{P}1 +~\textit{P}3 kita akan mengeliminasi suku-\textit{a}~pada~\textit{P}3 dan menghasilkan persamaan~\textit{P}3 yang baru:~\textit{b}~+ 2\textit{c}~= 5.811.
+
+\noindent 
+
+\noindent Selanjutnya kita dapat menyelesaikan subsistem persamaan linear dua variabel (dua persamaan terbawah) dan mendapatkan~\textit{c}~= 1.966. Dengan substitusi balik, kita juga akan memperoleh~\textit{a}~= 1.596 dan~\textit{b}~= 1.879. Sehingga, selesaian dari SPLTV di atas adalah (1.596, 1.879, 1.966). Atau dengan kata lain, kedatangan Belanda di bawah pimpinan Cornelis De Houtman, lahirnya R.A. Kartini, dan lahirnya Supersemar secara berturut-turut terjadi pada tahun 1596, 1879, dan 1966.
+
+\noindent Sumber :https://yos3prens.wordpress.com/2013/11/10/5-soal-dan-pembahasan-penerapan-spltv/
+
+\noindent 
+
+\noindent \textbf{Contoh 4: Permasalahan Campuran Kimia}
+
+\noindent Seorang ahli kimia mencampur tiga larutan glukosa yang memiliki konsentrasi 20\%, 30\%, dan 45\% untuk menghasilkan 10 L larutan glukosa dengan konsentrasi 38\%. Jika volume larutan 30\% yang digunakan adalah 1 L lebih besar daripada dua kali larutan 20\% yang digunakan, tentukan volume masing-masing larutan yang digunakan.
+
+\noindent 
+
+\noindent \textbf{Pembahasan}~Misalkan~\textit{p},~\textit{q}, dan~\textit{r}~secara berturut-turut merupakan volume dari larutan glukosa yang memiliki konsentrasi 20\%, 30\%, dan 45\%. Maka kita akan mendapatkan persamaan pertamanya adalah~\textit{p}~+~\textit{q}~+~\textit{r}~= 10 dan persamaan keduanya adalah 0,2\textit{p}~+ 0,3\textit{q}+ 0,45\textit{r}~= 3,8 (3,8 diperoleh dari 0,38 $\mathrm{\bullet}$ 10). Dari kalimat, ``volume larutan 30\% yang digunakan adalah 1 L lebih besar daripada dua kali larutan 20\% yang digunakan'', kita mendapatkan persamaan ketiga, yaitu~\textit{q}~= 2\textit{p}~+ 1. Sehingga, ketiga persamaan tersebut akan membentuk sistem,
+
+\noindent 
+
+\noindent Suku-\textit{p}~pada persamaan pertama adalah 1. Apabila dituliskan kembali ke dalam bentuk standar, sistem tersebut akan menjadi
+
+\noindent 
+
+\noindent Gunakan --4\textit{P}1 +~\textit{P}2 dan 2\textit{P}1 +~\textit{P}3 untuk mengeliminasi suku-\textit{p}~pada~\textit{P}2 dan~\textit{P}3.
+
+\noindent
+
+\noindent 
+
+\noindent Sehingga,~\textit{P}2 yang baru adalah 2\textit{q}~+ 5\textit{r}~= 36 dan~\textit{P}3 yang baru adalah 3\textit{q}~+ 2\textit{r}~= 21 yang membentuk sistem,
+
+\noindent 
+
+\noindent Selanjutnya gunakan 3\textit{P}2 + (--2\textit{P}3) untuk mengeliminasi suku-\textit{q}~pada P3.
+
+\noindent 
+
+\noindent 
+
+\noindent Dengan membagi persamaan di atas dengan 11, maka akan dihasilkan persamaan~\textit{r}~= 6 yang akan menjadi~\textit{P}3 baru pada sistem berikut.
+
+\noindent 
+
+\noindent Selanjutnya kita gunakan substitusi balik untuk mendapatkan nilai~\textit{p}~dan~\textit{q}, yaitu~\textit{p}~= 1 dan~\textit{q}~= 3. Sehingga selesaian dari SPLTV tersebut adalah (1, 3, 6). Atau dengan kata lain, volume larutan glukosa dengan konsentrasi 20\%, 30\%, dan 45\% secara berturut-turut adalah 1 L, 3 L, dan 6L.
+
+\noindent Sumber :https://yos3prens.wordpress.com/2013/11/10/5-soal-dan-pembahasan-penerapan-spltv/
+
+\noindent 
+
+\noindent \textbf{Contoh 5: Menulis Kembali Fungsi Rasional}
+
+\noindent Dapat ditunjukkan bahwa fungsi rasional,
+
+\noindent 
+
+\noindent dapat ditulis dalam bentuk penjumlahan dua suku
+
+\noindent 
+
+\noindent di mana koefisien-koefisien~\textit{A},~\textit{B}, dan~\textit{C}~adalah selesaian-selesaian untuk SPLTV
+
+\noindent 
+
+\noindent Tentukan koefisien-koefisien tersebut dan ujilah jawabanmu dengan menjumlahkan dua suku tersebut.
+
+\noindent 
+
+\noindent \textbf{Pembahasan}~Dengan menggunakan~\textit{P}1 + (--\textit{P}3) kita dapat mengeliminasi suku-\textit{A}~pada~\textit{P}3 untuk dijadikan~\textit{P}3 yang baru.
+
+\noindent 
+
+\noindent 
+
+\noindent Dengan menyelesaikan subsistem 2 $\times$ 2 diperoleh~\textit{C}~= --3. Kemudian dengan substitusi balik, diperoleh~\textit{A}~= 2 dan~\textit{B}~= --2. Sehingga selesaian dari SPLTV tersebut adalah (2, --2, --3). Selanjutnya kita uji penjumlahan dua sukunya.
+
+\noindent 
+
+\noindent Setelah diuji, ternyata penjumlahan dua suku tersebut sama dengan fungsi rasional di awal. Semoga bermanfaat, yos3prens.
+
+\noindent Sumber :https://yos3prens.wordpress.com/2013/11/10/5-soal-dan-pembahasan-penerapan-spltv/
+
+\noindent 
+
+\noindent \textbf{Contoh 6}
+
+\noindent \textit{Ahmad membeli di sebuah Toko peralatan sekolah berupa 4 buah penggaris, 6 buah buku tulis dan 2 buah pena biaya sebesar Rp 19.000,00. Di Toko yang sama Sulaiman berbelanja 3 buah buku tulis dan sebuah penggaris dengan menghabiskan uang Rp 7.000,00. Jika harga sebuah penggaris adalah Rp 1.000,00 maka berpakah harga sebuah dengan menghabiskan pena?}Untuk menyelesaikan kasus diatas, kita dapat menggunakan konsep sistem persamaan tiga variabel.\textbf{Pembahasan}!Dimisalkan bahwa;X = harga sebuah penggarisY = harga sebuah bukuZ = harga sebuah pena\textbf{Diketahui}:4X + 6Y + 2Z      = 19.000 ~ ~~persamaan (I)
+
+\noindent 3Y + X                = 7.000 ~ ~ ~~ persamaan (II)
+
+\noindent X=1.000     persamaan (III)\textbf{Ditanya}:Z = ?\textbf{Dijawab}:Kita selesaikan terlebih dahulu persamaan (II) dengan bantuan persamaan (III), untuk mengetahui nilai Y (harga sebuah buku).3Y + X                  = 7.000 ~ ~  ( X = 1.000 )3Y + 1.000 ~ ~ ~ ~ ~~ = 7.0003Y                         = 7.000 -- 1.0003Y ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~  = 6.000Y                           = 6.000/3Y ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  = 2.000         persamaan (IV)Kita lanjutkan untuk menyelesaikan persamaan (I) dengan bantuan persamaan (III) dan persamaan (IV) yang dihasilkan dari penghitungan di atas untuk mencari nilai Z (harga sebuah pena).Kita sudah memiliki nilai;Y ~ ~= 2.000 dan,X ~ ~= 1.000.Maka,4X + 6Y + 2Z                         = 19.0004\eqref{GrindEQ__1_000_} + 6\eqref{GrindEQ__2_000_} + 2Z        = 19.0004.000 + 12.000 + 2Z ~ ~ ~ ~ ~ ~~  = 19.00016.000 + 2Z                            = 19.0002Z                                           = 19.000 -- 16.0002Z~                                          = 3.000Z                                             = 3.000/2Z                                             = 1.500Sudah terjawab masing -- masing nilai X, Y dan Z sebagai berikut;X    = 1.000Y    = 2.000Z ~~ = 1.500
+
+\noindent 
+
+\noindent Jadi, harga sebuah pena adalah Rp 1.500,00
+
+\noindent Sumber : http://www.berpendidikan.com/2015/05/sistem-persamaan-linera-tiga-variabel-dan-contohnya.html
+
+\noindent 
+
+\noindent \textbf{Contoh 7 }
+
+\noindent 3 orang siswi sd yang bernama nazsa, chindy dan euis akan membeli penghapus, pensil, dan buku. :
+
+\begin{enumerate}
+\item  Nazsa membeli 3 penghapus, 4 pensil, dan 5 buku dengan harga Rp.26.000,00
+
+\item  Chindy membeli 5 penghapus, 2 pensil, dan 1 buku dengan harga Rp.12.000,00
+
+\item  Euis membeli 1 penghapus, 1 pensil, dan 2 buku dengan harga Rp.9.000,00
+\end{enumerate}
+
+\noindent Tentukan berapa harga penghapus, pensil, dan buku !!!!Jawab :untuk mengerjakan soal matematika cerita kita rubah dulu kalimat soal di atas menjadi kalimat matematika :Penghapus : xPensil~~~~~~~ : yBuku~~~~~~~~ : zmaka :persamaan 1 Nazsa :~ 3x+4y+5z = Rp.26.000,00persamaan 2 Chindy : 5x+2y+z~ = Rp.12.000,00persamaan 3 Euis~~~~ : x+y+2z~~~~ = Rp.~ 9.000,00ada 3 langkah untuk menyelesaikan sistem persamaan linear tiga variabel
+
+\noindent \textbf{Langkah ke-1 :}
+
+\noindent Kita lakukan metode eliminasi. Kita ambil persamaan ke-2 dan persamaan ke-35x+2y+~ z = 12.000~ x+~ y+2z =~~ 9.000dikarenakan tidak ada variabel yang sama maka persamaan dua kita kalikan dua dan persaman tiga kita kalikan satu, tujuannya untuk menghilangkan variabel z supaya semua variabel menjadi variabel xmaka :10x+4y+2z = 24.000\underbar{~~~ x+~ y+2z =~~ 9.000~ -}9x+3y = 15.0003(3x+y) = 15.000, supaya lebih sederhana maka persamaan kita bagi dengan 3, maka :3(3x+y)/3 = 15.000/33x+y =~~ 5.000, supaya lebih sederhana maka persamaan kita kurangi 3x, maka :3x+y-3x~ =~~ 5.000 - 3x\textbf{y~ =~~ 5.000 - 3x}kemudian karena y sudah menjadi nilai x maka kita lakukan metode substitusi tujuannya untuk mengganti variabel z menjadi bernilai x, kita ambil persamaan 3 untuk melakukan substitusi :x + y + 2z~ =~ 9.000x + y + 2z - y - 2z =~ 9.000 - y -2z, supaya lebih sederhana persamaan kita kurangi -y dan -2zx =~ 9.000 -y -2zkita substitusikan y ke persamaan 3, maka :x = 9.000 - y - 2z, dikarenakan y = 5.000 - 3x, maka :x = 9.000 - (5.000 - 3x) - 2zx = 9.000 - 5.000 + 3x - 2z,x = 4.000 - 3x - 2z, supaya lebih sederhana maka persamaan kita kurangi 3x :x - 3x = 4.000 - 3x - 2z - 3x~~ - 2x~ = 4.000 - 2z, untuk lebih menyederhanakan lagi persamaan kita kurangi~ 4.000-2x - 4.000~ = 4.000 - 2z - 4.000-2x - 4.000~ = -2z, supaya -2z menjadi z maka persamaan kita bagi dengan -2(-2x - 4.000) /-2 = -2z/-2
+
+\noindent \textbf{~~x + 2.000~~~ = z}
+
+\noindent \textbf{Langkah ke-2}
+
+\noindent Untuk langkah ke-2 kita cari berapakah nilai yang sesunggunya dari variabel x, dengan cara mensubstitusikan variabel y dan variabel z yang sudah kita rubah nilainya menjadi xuntuk melakukan substitusi menemukan varibable x kita gunakan persamaa ke-1 karena persama ke-2 dan ke-3 sudah kita gunakan pada langkah yang pertama.Maka :3x + 4y + 5z~~~~~~~~~~~~~~ = 26.0003x + 4y + 5z - 4y - 5z = 26.000 - 4y - 5z~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3x = 26.000 - 4y - 5z~kita substitusikan variabel y dan z yang sudah saya tandi warna hijau, maka :3x = 26.000 - 4(5.000-3x) - 5(x+2.000)3x = 26.000 - 20.000 + 12x - 5x - 10.0003x = - 4.000 + 7x, supaya persamaan menjadi lebih sederhana kita kurangi -7x :3x - 7x = - 4.000 + 7x - 7x- 4x = - 4.000, supaya -4x menjadi x maka persamaan kira bagi dengan -4-4x/-4 = - 4.000/-4\textbf{x =~~ 1.000}
+
+\noindent \textbf{Langkah ke-3}
+
+\noindent Untuk langkah ke-3, dikarenakan nilai variabel x sudah di temukan maka masalah yang belum kita temukan kita harus mencari berapa nilai variabel y dan z.perhatikan persamaan yang sudah saya tandai warna hijau di atas!gunakan kedua persaman yang sudah saya tandai warna hijau untuk mencari nilai dari varible y dan zKita cari nilai y terlebih dahulu~y = 5.000 - 3x, di karenakan x = 1.000 makay = 5.000 - 3\eqref{GrindEQ__1_000_}y = 5.000 - 3.000\textbf{y = 2.000}kemudian kita cari nilai zz = 2.000 + x, dikarenakan x = 1.000 maka :z = 2.000 + 1.000,~\textbf{z = 3.000}Persamaan yang saya tandai warna kuning ialah hasil dari pencarian kita :)alhamdullilah kita sudah memecahkan masalahnya yaitu :harga penghapus : Rp.1.000harga pensil~~~~~~~ : Rp.2.000harga buku~~~~~~~~~ : Rp.3.000
+
+\noindent Sumber : https://matematikaakuntansi.blogspot.co.id/2015/10/cara-menyelesaikan-sistem-persamaan.html
+
+\noindent \textbf{Contoh 8}
+
+\noindent Tentukan Hp dari SPLx - 2y + z = 0.......(Pers1)3x + y - z = 5.......(Pers2)x - 3y - 2z = - 15....(Pers3)Penyelesaian:langkah1:~ eleminasi pers1 dan pers2 ====$>$$>$$>$eleminasi variabel Z (~~~~~~~~~~~~~~~~~ x - 2y + z = 0~~~~~~~~~~~~~~~~ 3x + y - z = 5~ ~ ~ ~ ~ ~ ~ ~ \_\_\_\_\_\_\_\_\_\_\_\_~+ ~~ ..............==$>$$>$ kenapa (+) bukannya(-),itu dikarenakan kedua varibel
+
+\noindent ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ memiliki tanda yg berbeda (+z) dan (-z)
+
+\noindent ~~~~~~~~~~~~~~~~~~~~~~~~~4x - y = 5~~~ ........(Pers4)
+
+\noindent ~langkah2.eleminasi pers1 dan pers 3 .....eleminasi var z (eleminasilah yg menurut anda lebih mudah~~~~~~~~~~~~~~~ dihilangkan seperti variabel x ,lebih mudah dieleminasi~ ~ ~ ~ ~ ~ ~ ~~ x - 2y + z = 0 ~~~~~~ {\textbar}x2{\textbar}~ 2x - 4y +2 z = 0~~~~~~~~~~~~~~~~ x - 3y - 2z = -15~~ {\textbar}x1{\textbar}~~ x~ - 3y -2z = -15
+
+\noindent ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \_\_\_\_\_\_\_\_\_\_\_\_\_\_ + ~ ~ ~
+
+\noindent ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~ ~~~3x - 7y = -15~~~~~~~ (pers5)langkah3.eleminasi pers4 dan pers5 (ingat :"selalu pilih yg paling mudah dieleminasi karna dapat~~~~~~~~~~~~~~ mempersingkat waktu pengerjaan")~~~~~~~~~~ ~~ eleminasi var y
+
+\noindent ~~~~~~~~~~~~~~~
+
+\noindent ~~~~~~~~~~~~~~~~~ 4x - y = 5~~~~~~~~~~ {\textbar}x7{\textbar}~~ 28x -7y = 35
+
+\noindent ~~~~~~~~~~~~~~~~~~3x - 7y = -15 ~~~ {\textbar}x1{\textbar} ~~ 3x - 7y = -15
+
+\noindent ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~ \_\_\_\_\_\_\_\_\_\_ -~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 25x = 50~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ x = 50 / 25~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~x = 2langkah4.subtitusi nilai var yang didapat kepers 4 atau pers 5 (karna hanya 2 variabel== lebih cepat) ~ ~ ~~~~~~~~~ ~ ~ ~ ~ ~ ~~~~~~~~~~~~~~~~3x - 7y = -15 ~ ............pers5~ ~ ~ ~ ~ ~ ~~~ ~ ~ ~ ~ ~ ~~ 3\eqref{GrindEQ__2_} - 7y = -15~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 6 -7y = -15~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -7y = -15 -6~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -7y = -21~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~ y =-21 / -7~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~~y = 3~~
+
+\noindent langkah5.subtitusi nilai var yang didapat kepers 1 atau pers 2~~ ~ ~ ~ ~ ~ ~ x - 2y ~+ z = 0~ ~ ~ ~ ~ ~~ 2 - 2\eqref{GrindEQ__3_} + z = 0~ ~ ~ ~ ~ ~~ 2 - 6 ~+ z =0~ ~ ~ ~ ~ ~ ~ ~ ~ -4~+ z = 0~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~z = 4~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\noindent ~~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~ ~ ~ ~~
+
+\noindent Maka kita dapatkan~HP $\{$2,3,4$\}$untuk ketiga persamaanx - 2y + z = 0.......(Pers1)3x + y - z = 5.......(Pers2)x - 3y - 2z = - 15....(Pers3)
+
+\noindent Sumber : https://itsystemresearch.blogspot.co.id/2016/06/soal-dan-pembahasan-sistem-persamaan.html\textbf{}
+
+\noindent 
+
 
 %------------------------------------------------
-
-\section{Examples}\index{Examples}
-
-This is an example of examples.
-
-\subsection{Equation and Text}\index{Examples!Equation and Text}
-
-\begin{example}
-Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
-\begin{equation}
-f(x)=\left\{\begin{aligned} & \mathrm{e}^{|x|} & & \text{si $|x-x^0|\leq 1/2$}\\
-& 0 & & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
-\end{equation}
-The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\intoo{0}{5/2-\sqrt{2}}$.
-\end{example}
-
-\subsection{Paragraph of Text}\index{Examples!Paragraph of Text}
-
-\begin{example}[Example name]
-\lipsum[2]
-\end{example}
-
-%------------------------------------------------
-
-\section{Exercises}\index{Exercises}
-
-This is an example of an exercise.
-
-\begin{exercise}
-This is a good place to ask a question to test learning progress or further cement ideas into students' minds.
-\end{exercise}
-
-%------------------------------------------------
-
-\section{Problems}\index{Problems}
-
-\begin{problem}
-What is the average airspeed velocity of an unladen swallow?
-\end{problem}
-
-%------------------------------------------------
-
-\section{Vocabulary}\index{Vocabulary}
-
-Define a word to improve a students' vocabulary.
-
-\begin{vocabulary}[Word]
-Definition of word.
-\end{vocabulary}
 
 %----------------------------------------------------------------------------------------
 %	PART
