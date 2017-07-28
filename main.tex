@@ -929,7 +929,7 @@ Setiap masalah memiliki bentuknya masing-masing. Tidak sesuai soal dapat diseles
 
 \chapter{Linear Tiga Variabel}
 
-\section{Corollaries}\index{Corollaries}
+\section{SISTEM PERSAMAAN LINEAR TIGA VARIABEL}\index{SISTEM PERSAMAAN LINEAR TIGA VARIABEL}
 
 \noindent \textbf{SISTEM PERSAMAAN LINEAR TIGA VARIABEL (SPLTV)}
 
@@ -1004,6 +1004,172 @@ Setiap masalah memiliki bentuknya masing-masing. Tidak sesuai soal dapat diseles
 \noindent 
 
 \noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent Metoda meyelesaikan persamaan
+
+\noindent 1. Metoda Eliminasi
+
+\noindent 2. Metoda subtitusi
+
+\noindent 3. Metoda determinan
+
+\noindent 4. Metoda matriks
+
+\noindent 5. Metoda operasi baris elementer
+
+\noindent ~
+
+\noindent Metoda Eliminasi
+
+\noindent Supaya lebih mudah langsung saja kita masuk ke contoh-contoh
+
+\noindent Contoh soal 1 :
+
+\noindent 2x + 3y -- z = 20
+
+\noindent 3x + 2y + z = 20
+
+\noindent x + 4y + 2z = 15
+
+\noindent Jawab :
+
+\noindent Ketiga persamaan bisa kita beri nama persamaan \eqref{GrindEQ__1_}, \eqref{GrindEQ__2_}, dan \eqref{GrindEQ__3_}
+
+\noindent 2x + 3y -- z = 20 {\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}..\eqref{GrindEQ__1_}
+
+\noindent 3x + 2y + z = 20 {\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}..\eqref{GrindEQ__2_}
+
+\noindent x + 4y + 2z = 15 {\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}..\eqref{GrindEQ__3_}
+
+\noindent Sistem persamaan ini harus kita sederhanakan menjadi sistem persamaan linear 2 variabel. Untuk itu kita eliminasi variabel z
+
+\noindent Sekarang persamaan \eqref{GrindEQ__1_} dan \eqref{GrindEQ__2_} kita jumlahkan
+
+\noindent 2x + 3y -- z = 20
+
+\noindent 3x + 2y + z = 20\_\_\_\_\_~~ +
+
+\noindent 5x + 5y = 40
+
+\noindent x + y = 8 {\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}.\eqref{GrindEQ__4_}
+
+\noindent Selanjutnya persamaan \eqref{GrindEQ__2_} dikali \eqref{GrindEQ__2_} dan persamaan \eqref{GrindEQ__3_} dikali \eqref{GrindEQ__1_} sehingga diperoleh
+
+\noindent 6x + 4y + 2z = 40
+
+\noindent x + 4y + 2z = 15\_\_\_\_~ \_
+
+\noindent ~~~~~~~~~~~~~~ 5x = 25
+
+\noindent ~~~~~~~~~~~~~~~~ x = 5
+
+\noindent Nilai x ini kita subtitusi ke persamaan \eqref{GrindEQ__4_} sehingga
+
+\noindent x + y = 8
+
+\noindent 5 + y = 8
+
+\noindent ~ ~ ~~ y = 3
+
+\noindent selanjutnya nilai x dan y yang ada kita subtitusikan ke persamaan \eqref{GrindEQ__2_}
+
+\noindent 3x + 2y + z = 20
+
+\noindent 3.5 + 2.3 + z = 20
+
+\noindent 15 + 6 + z = 20
+
+\noindent ~~~~~~~~~~~~~~ z = -1
+
+\noindent Jadi, himpunan penyelesaiannya adalah~$\{$(5, 3, -1)$\}$
+
+\noindent Contoh soal 2 :
+
+\noindent Tentukan himpunan penyelesaian dari
+
+\noindent 3x + 4y -- 3z = 3
+
+\noindent 2x -- y + 4z = 21
+
+\noindent 5x + 2y + 6z = 46
+
+\noindent Jawab :
+
+\noindent Agar lebih mudah, ketiga persamaan kita beri nama \eqref{GrindEQ__1_}, \eqref{GrindEQ__2_}, dan \eqref{GrindEQ__3_}
+
+\noindent 3x + 4y -- 3z = 3~ {\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}.\eqref{GrindEQ__1_}
+
+\noindent 2x -- y + 4z = 21~ {\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}.\eqref{GrindEQ__2_}
+
+\noindent 5x + 2y + 6z = 46 {\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}{\dots}.\eqref{GrindEQ__3_}
+
+\noindent Selanjutnya persamaan \eqref{GrindEQ__1_} dikali 1 dan persamaan \eqref{GrindEQ__2_} dikali 4, sehingga diperoleh
+
+\noindent 3x + 4y -- 3z = 3~~~ {\textbar}1{\textbar} $\mathrm{\to}$ 3x + 4y -- 3z = 3
+
+\noindent 2x -- y + 4z = 21~~~ {\textbar}4{\textbar} $\mathrm{\to}$ 8x -- 4y+16z = 84 ~~ +
+
+\noindent .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11x + 13z = 87 {\dots}{\dots}{\dots}{\dots}{\dots}..\eqref{GrindEQ__4_}
+
+\noindent Berikutnya persamaan \eqref{GrindEQ__3_} dikali 1 dan persamaan \eqref{GrindEQ__2_} dikali 2, sehingga diperoleh
+
+\noindent 5x + 2y + 6z = 46~~~ {\textbar}1{\textbar} $\mathrm{\to}$ 5x + 2y + 6z = 46
+
+\noindent 2x -- y + 4z = 21~~~~~ {\textbar}2{\textbar} $\mathrm{\to}$ 4x -- 2y + 8z = 42~~~~ +
+
+\noindent .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 9x + 14z = 88 {\dots}{\dots}{\dots}{\dots}..\eqref{GrindEQ__5_}
+
+\noindent Sekarang persamaan \eqref{GrindEQ__5_} dikali 11 dan persamaan \eqref{GrindEQ__4_} dikali 9 sehingga diperoleh
+
+\noindent 9x + 14z = 88~~ {\textbar}11{\textbar}~~ 99x +154z = 968
+
+\noindent 11x + 13z = 87~ {\textbar}9{\textbar}~~~ 99x + 117z=783~~~~~~ \_
+
+\noindent .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37z = 185
+
+\noindent .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ z = 5
+
+\noindent Nilai z=5 kita subtitusi ke persamaan \eqref{GrindEQ__4_}
+
+\noindent 11x + 13z = 87
+
+\noindent 11x + 13.5 = 87
+
+\noindent 11x + 65 = 87
+
+\noindent ~~~~~~~~ 11x = 22
+
+\noindent ~~~~~~~~~~~~~ x = 2
+
+\noindent Nilai x=2 dan z=5 kita subtitusikan ke persamaan \eqref{GrindEQ__3_} sehingga
+
+\noindent 5x +2y +6z = 46
+
+\noindent 5.2 +2y +6.5 = 46
+
+\noindent 10 + 2y + 30 = 46
+
+\noindent ~~~~~~~~~~~~~~~~~ 2y = 6
+
+\noindent ~~~~~~~~~~~~~~~~~~~ y = 3
+
+\noindent Jadi, himpunan penyelesaiannya adalah~$\{$(2, 3, 5)$\}$
+
+\noindent 
+
+\noindent 1.\includegraphics*[width=3.12in, height=1.49in, keepaspectratio=false]{image61}Penyelesaian:\includegraphics*[width=3.13in, height=2.26in, keepaspectratio=false]{image62}\includegraphics*[width=3.11in, height=1.81in, keepaspectratio=false]{image63}
+
+\noindent 2.\includegraphics*[width=2.89in, height=2.03in, keepaspectratio=false]{image64}Penyelesaian:\includegraphics*[width=3.11in, height=1.85in, keepaspectratio=false]{image65}\includegraphics*[width=3.12in, height=1.60in, keepaspectratio=false]{image66}\includegraphics*[width=3.12in, height=1.71in, keepaspectratio=false]{image67}
+
+\noindent 
+
+\noindent 
+
+\noindent
 
 %------------------------------------------------
 
