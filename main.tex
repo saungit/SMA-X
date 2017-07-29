@@ -1174,8 +1174,470 @@ Setiap masalah memiliki bentuknya masing-masing. Tidak sesuai soal dapat diseles
 %------------------------------------------------
 
 \section{Penerapan Sistem Persamaan Linear Tiga Variabel}\index{Penerapan Sistem Persamaan Linear Tiga Variabel}
-
-
+\sloppy
+Sistem Persamaan Linear Tiga Variabel adalah sistem persamaan yang terdiri dari Tiga Variabel/Peubah. \par
+\noindent 
+Bentuk Umum SPLTV: \par
+\noindent 
+Bentuk umum SPLTV x, y, dan z dapat ditulis sebagai berikut: \par
+\noindent 
+a1x + b1y + c1z = d1 \par
+\noindent 
+a2x + b2y + c2z = d2 \par
+\noindent 
+a3x + b3y + c3z = d3 \par
+\noindent 
+dengan a1, a2, a3, b1, b2, b3, c1, c2, c3, $  $ $  $d1, d2, d3, $  $Î $  $R \par
+\noindent 
+Persamaan a1x + b1y + c1z = d1, a2x + b2y + c2z = d2, dan a3x + b3y + c3z = d3 merupakan persamaan di R3. Ketiga bidang tersebut dapat saling berpotongan di sebuah titik, sebuah garis, atau tidak berpotongan. \par
+\noindent 
+\begin{myEnumerate}
+	\item Jika tiga bidang berpotongan dan perpotongannya berupa titik, maka SPLTV tersebut mempunyai satu anggota dalam himpunan penyelesaiannya (mempunyai penyelesaian tunggal), yaitu titik potong tersebut. \par
+	\noindent 
+	\item  Jika tiga bidang berpotongan dan perpotongannya berupa garis, maka SPLTV tersebut mempunyai tak hingga banyak penyelesaian, yaitu titik-titik pada garis potong ketiga bidang tersebut. \par
+	\noindent 
+	\item  Jika ketiga bidang tidak berpotongan sama sekali, maka SPLTV tersebut dapat digambarkan ke dalam tiga kemungkinan berikut ini.\end{myEnumerate}
+\par
+\noindent 
+$  $Dengan kata lain SPLTV ini tidak mempunyai anggota dalam himpunan Penyelesaiannya (himpunan Penyelesaiannya adalah himpunan kosong). \par
+\vspace{12pt}
+\noindent 
+Secara aljabar, penyelesaian SPLTV dapat dicari dengan beberapa cara/metode antara lain: \par
+\noindent 
+\begin{myEnumerate}
+	\item Metode substitusi \par
+	\noindent 
+	\item Metode gabungan/kombinasi eliminasi dan substitusi \par
+	\noindent 
+	\item Metode determinan (dipelajari dalam materi matriks)\end{myEnumerate}
+\par
+\vspace{12pt}
+\textbf{1.} $  $ $  $ $  $ $  $ $  $ $  $\textbf{Menyelesaian SPLTV dengan Metode Substitusi} \par
+\noindent 
+Untuk menentukan penyelesaian/himpunan penyelesaian SPLTV dengan metode substitusi, langkah-langkahnya sebagai berikut: \par
+\noindent 
+\begin{myEnumerate}
+	\item Pilihlah salah satu persamaan yang paling sederhana, kemudian nyatakan x sebagai fungsi y dan z, atau y sebagai fungsi x dan z, atau z sebagai fungsi x dan y. \par
+	\noindent 
+	\item Substitusikan x atau y atau z yang diperoleh pada langkah pertama (1) ke dalam dua persamaan yang lainnya sehingga diperoleh SPLDV. \par
+	\noindent 
+	\item Selesaikan SPLDV yang diperoleh pada langkah kedua (2)\end{myEnumerate}
+\par
+\noindent 
+Contoh: \par
+\noindent 
+\begin{myEnumerate}
+	\item Tentukan penyelesaian SPLTV berikut dengan substitusi \par
+	x + y + 2x = 9 ……….. (1) \par
+	2x + 4y – 3z = 1 …….. (2) \par
+	3x + 6y – 5z = 0 …….. (3) \par
+	\noindent 
+	Jawab: \par
+	\noindent 
+	\begin{itemize}
+		\item Dari persamaan (1), kita dapatkan x = 9 – y – 2z ……….. (4) \par
+		\noindent 
+		\item Persamaan (4) disubstitusikan ke persamaan (2) dan (3)\end{itemize}
+	\par
+	2(9 – y – 2z) + 4y – 3z = 1 \par
+	2y – 7 z = -17 ………………………………………………. (5) \par
+	Dan \par
+	3(9 – y – 2z) + 6 – 5z = 0 \par
+	3y – 11z = -27 ……………………………………………….(6) \par
+	Sehingga diperoleh SPLTV berikut ini. \par
+	2y – 7z = -17 ………………………………………………… $  $ $  $ $  $ $  $ $  $(5) \par
+	3y – 11z = -27 ……………………………………………….. $  $ $  $ $  $ $  $ $  $(6) \par
+	Selanjutnya, kita dapat mencari nilai y dan z dengan cara substitusi seperti pada SPLDV. \par
+	\noindent 
+	\begin{itemize}
+		\item Dari persamaan (5) diperoleh: y = $  $ $  $…………………. (7) \par
+		\noindent 
+		\item Substitusi persamaan (7) ke persamaan (6)\end{itemize}
+	\par
+	\noindent 
+	\begin{itemize}
+		\item -51 + 21z – 22z = -54 \par
+		\noindent 
+		\item -z = -3 \par
+		\noindent 
+		\item z = 3\end{itemize}
+	\par
+	\noindent 
+	\begin{itemize}
+		\item Kemudian nilai z = 3 disubstitusikan ke persamaan (7), diperoleh nilai y = 2 \par
+		\noindent 
+		\item Substitusikan y = 2 dan z=3 ke persamaan (4) diperoleh nilai x= 1. \par
+		\noindent 
+		Jadi SPLTV tersebut mempunyai penyelesaian tunggal yaitu (1,2,3) atau Himpunan Penyelesaiannya adalah  $  \{  $(1,2,3) $  \}  $. \par
+		\vspace{12pt}
+		\vspace{12pt}
+		\noindent 
+		\item Tentukan penyelesaian dari SPLTV dengan substitusi \par
+		2x + y – z = 2 ………… (1) \par
+		x – 2y + 3z = 1 ……….. (2) \par
+		3x – y + 2z = 3 ……….. (3) \par
+		\noindent 
+		Jawab: \par
+		\noindent 
+		Misalkan substitusi dimulai pada variabel z terlebih dahulu (persamaan yang paling sederhana). \par
+		\noindent 
+		\item Dari persamaan (1) diperoleh: z = 2x + y – 2 …………….. (4) \par
+		\noindent 
+		\item Persamaan (4) disubstitusikan ke persamaan (2) dan (3) diperoleh: \par
+		x – 2y + 3(2x + y – 2) = 1 \par
+		\begin{itemize}
+			\item 7x + y = 7 ………………………………………………….. (5)\end{itemize}
+		\par
+		$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $Dan \par
+		$  $ $  $ $  $ $  $ $  $3x – y + 2(2x + y – 2) = 3 \par
+		\begin{itemize}
+			\item 7x + y = 7 …………………………………………………. $  $ $  $(6)\end{itemize}
+		\par
+		\noindent 
+		\item Persamaan (5) sama dengan persamaan (6), sehingga dari kedua persamaan ini dapat kita peroleh nilai satu peubah sebagai fungsi dari peubah yang lain, misalnya: \par
+		y = 7 – 7x ………………………………………………………. (7) \par
+		\noindent 
+		\item Substitusikan persamaan (7) ke persamaan (4), maka diperoleh: \par
+		z = 2x + (7 – 7x) – 2 \par
+		z = -5x + 5 \par
+		Jadi, penyelesaian dari SPLTV tersebut adalah: \par
+		x = x \par
+		y = 7 – 7x \par
+		z = 5 – 5x \par
+		\noindent 
+		Penyelesaian dari SPLTV ini banyak sekali, tergantung pada nilai x yang kita tentukan, misalnya. \par
+		\noindent 
+		\begin{itemize}
+			\item Jika x = 1, maka y = 0 dan z = 0 atau \par
+			\noindent 
+			\item Jika x = 0, maka y = 7 dan z = 5 atau \par
+			\noindent 
+			\item Jika x = -1, maka y = 14 dan z = 10 dan seterusnya\end{itemize}
+		\par
+		\noindent 
+		Dengan kata lain SPLTV ini mempunyai tak hingga banyak anggota dalam Himpunan Penyelesaiannya. \par
+		\noindent 
+		\textbf{\underline{Cara lain}} \par
+		\noindent 
+		Persamaan (5) sama dengan persamaan (6): berarti persamaan yang satu merupakan kelipatan dari persamaan yang lain, maka himpunan penyelesaiannya mempunyai tak hingga banyak anggota. \par
+		\noindent 
+		\item Tentukan penyelesaian dari SPLTV dengan substitusi \par
+		\noindent 
+		x + 2y – 3z = -1 …………………………………………………. (1) \par
+		\noindent 
+		3x - y + 2z = 7 …………………………………………………… (2) \par
+		\noindent 
+		5x + 3y – 4z = 2 …………………………………………………. (3) \par
+		\noindent 
+		Jawab: \par
+		\noindent 
+		Misalkan substitusi dimulai pada variabel x, dari persamaan (1) diperoleh: \par
+		\noindent 
+		x = -2y + 3z – 1 ……………………………………………….. (4) \par
+		\hspace*{0.5in} Persamaan (4) disubstitusikan ke persamaan (2) dan (3) diperoleh: \par
+		\noindent 
+		3(-2y + 3z – 1) – y + 2z = 7 \par
+		\noindent 
+		\begin{itemize}
+			\item -7y + 11z = 10 …………………………………………….. (5) \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $dan \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $5(-2y + 3z – 1) + 3y – 4z = 2 \par
+			\noindent 
+			\item -7y + 11z = 7 ………………………………………………. (6)\end{itemize}
+		\par
+		\noindent 
+		Persamaan (5) dan (6) menyatakan bahwa SPLDV tersebut tidak konsisten sehingga SPLTV tidak mempunyai penyelesaian. \par
+		\vspace{12pt}
+		\textbf{2.} $  $ $  $ $  $ $  $ $  $ $  $\textbf{Menyelesaian SPLTV dengan Metode Eliminasi Substitusi} \par
+		\noindent 
+		Untuk menentukan penyelesaian/himpunan penyelesaian SPLTV dengan metode eliminasi, langkah-langkahnya sebagai berikut: \par
+		\begin{myEnumerate}
+			\item Eliminasi salah satu variabel x atau y atau z sehingga diperoleh Sistem Persamaan Linear Dua Variabel (SPLTV). \par
+			\item Selesaikan SPLTV yang diperoleh dari langkah (1) \par
+			\item Substitusikan nilai-nilai variabel yang diperoleh pada langkah-langkah 2 ke dalam salah satu persamaan semula untuk mendapatkan nilai variabel yang lainnya.\end{myEnumerate}
+		\par
+		\vspace{12pt}
+		\noindent 
+		Contoh: \par
+		\noindent 
+		\begin{myEnumerate}
+			\item Tentukan penyelesaian dari SPLTV berikut dengan Eliminasi \par
+			\noindent 
+			x + y + 2z = 9 ………………. (1) \par
+			\noindent 
+			2x + 4y – 3z = 1 ……………. (2) \par
+			\noindent 
+			3x + 6y – 5z = 0 ……………. (3) \par
+			\noindent 
+			Jawab: \par
+			\noindent 
+			Eliminasi z dari persamaan (1) dan (2) sehingga diperoleh: \par
+			\noindent 
+			x + y + 2z = 9 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x 3 $  $ó $  $3x + 3y + 6z = 27 \par
+			\noindent 
+			2x + 4y – 3z = 1 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x 2 $  $ó $  $\underline{4x + 8y – 6z = 2 $  $ $  $} $  $+ \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $7x + 11y $  $ $  $ $  $ $  $ $  $ $  $ $  $= 29 ……………..(4) \par
+			\vspace{12pt}
+			\vspace{12pt}
+			\noindent 
+			Eliminasi z dari persamaan (2) dan (3) sehingga diperoleh persamaan: \par
+			\noindent 
+			2x + 4y - 3z = 1 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x 5 $  $ $  $10x + 20y - 15z = 5 \par
+			\noindent 
+			3x + 6y – 5z = 0 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x 3 $  $ $  $9\underline{x + 18y – 15z $  $ $  $= 0 $  $ $  $} $  $ $  \_  $ \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $x + $  $ $  $2y $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $= 5 ………….. (5) \par
+			\noindent 
+			Dari persamaan (4) dan (5) diperoleh SPLDV, yaitu: \par
+			\noindent 
+			$  $ $  $ $  $7x + 11y = 29 …………… (4) \par
+			\noindent 
+			$  $ $  $ $  $ $  $x + 2y $  $ $  $ $  $ $  $= 5 …………….. (5) \par
+			\noindent 
+			$  $Eliminasi x pada persamaan (4) dan (5) diperoleh nilai y \par
+			\noindent 
+			7x + 11y = 29 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x1 $  $ $  $ $  $ $  $ $  $ $  $ $  $7x + 11y = 29 \par
+			\noindent 
+			x $  $ $  $+ 2y $  $ $  $ $  $ $  $= 5 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x7 $  $ $  $ $  $ $  $ $  $ $  $ $  $\underline{7x + 14y = 35} $  $ $  \_  $ \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $-3y $  $ $  $ $  $= -6 \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $y $  $ $  $= 2 \par
+			\vspace{12pt}
+			\noindent 
+			Eliminasi y pada persamaan (4) dan (5) diperoleh nilai x \par
+			\noindent 
+			7x + 11y = 29 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x2 $  $ $  $ $  $ $  $ $  $ $  $ $  $14x + 22y = 58 \par
+			\noindent 
+			$  $ $  $x + $  $ $  $2y $  $ $  $= 5 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x11 $  $ $  $ $  $ $  $ $  $\underline{11x + 22y = 55} $  $ $  \_  $ \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $3x $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $= 3 \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $x $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $= 1 \par
+			\noindent 
+			Substitusikan nilai x = 1 dan y = 2 ke persamaan yang paling sederhana (misal persamaan (1)) sehingga diperoleh nilai z \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $x + y + 2x = 9 \par
+			1 + 1 + 2z = 9 \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $2z = 6 \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $z = 3 \par
+			\noindent 
+			Penyelesaian SPLTV tersebut adalah x = 1, y = 2, z = 3 atau $  $\vspace{\baselineskip}
+			(1, 2, 3) \par
+			\noindent 
+			Sedangkan himpunan penyelesaiannya  $  \{  $(1,2,3) $  \}  $ \par
+			\vspace{12pt}
+			\noindent 
+			\item  $  $Tentukan penyelesaian dari SPLTV berikut dengan Eliminasi \par
+			\noindent 
+			2x + y – z = 2 ……………… (1) \par
+			\noindent 
+			x – 2y + 3x = 1 ……………. $  $ $  $(2) \par
+			\noindent 
+			3x – y + 2z = 3 …………….. (3) \par
+			\vspace{12pt}
+			\vspace{12pt}
+			\noindent 
+			Jawab: \par
+			\noindent 
+			Eliminasi z dari persamaan (1) dan (2) diperoleh persamaan (4) \par
+			\noindent 
+			2x + y – z = 2 $  $ $  $ $  \vert  $ x3 $  $ $  $ $  $ $  $ $  $ $  $ $  $6x + 3y – 3z = 6 \par
+			\noindent 
+			x - $  $ $  $y + 3z = 1 $  $ $  $ $  \vert  $ x1 $  $ $  $ $  $ $  $ $  $\underline{ }\underline{x - 2y + 3z $  $ $  $= 1} $  $ $  $+ \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $7x + y $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $= 7 $  $ $  $ $  $……………….. (4) \par
+			\noindent 
+			Eliminasi z dari persamaan (1) dan (3) diperoleh persamaan (5) \par
+			\noindent 
+			2x + y – z = $  $ $  $2 $  $ $  \vert  $ x2 $  $ $  $ $  $ $  $ $  $ $  $ $  $4x + 2y – 2z = 4 \par
+			\noindent 
+			3x - y + 2z = 3 $  $ $  \vert  $ x1 $  $ $  $ $  $ $  $ $  $ $  $ $  $3\underline{x - $  $ $  $ $  $y + 2z $  $ $  $= 3} $  $ $  $+ \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $7x + y $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $= 7 $  $ $  $ $  $……………….. (5) \par
+			\noindent 
+			Terlihat bahwa persamaan (4) sama dengan persamaan (5) sehingga kita peroleh nilai satu variabel yang merupakan fungsi dari variabel yang lain, yaitu y = 7 – 7x. \par
+			\noindent 
+			Substitusikan nilai y = 7 – 7x ke persamaan (1), diperoleh: \par
+			\noindent 
+			2x + (7 – 7x) – z = 2 \par
+			\noindent 
+			$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $z = -5x + 5 \par
+			\noindent 
+			Penyelesaian SPLTV tersebut adalah: \par
+			\noindent 
+			x = x \par
+			\noindent 
+			y = -7x + 7 \par
+			\noindent 
+			z = -5x + 5 \par
+			\noindent 
+			Dengan kata lain, SPLTV ini mempunyai banyak penyelesaian tergantung pada nilai variabel x yang kita tentukan. \par
+			\vspace{12pt}
+			\noindent 
+			\textbf{\underline{Cara Lain}} \par
+			\noindent 
+			Persamaan (4) sama dengan persamaan (5), berarti persamaan yang satu mrupakan kelipatan dari persamaan yang lain, maka himpunan penyelesaiannya mempunyai tak hingga banyak anggota. \par
+			\vspace{12pt}
+			\noindent 
+			\item Tentukan penyelesaian SPLTV berikut dengan Eliminasi\end{myEnumerate}
+		\par
+		\noindent 
+		x + 2y – 3z = -1 …………. (1) \par
+		\noindent 
+		3x - y + $  $ $  $2z = 7 …………. $  $ $  $(2) \par
+		\noindent 
+		5x + 3y – 4z = 2 ………… (3) \par
+		\vspace{12pt}
+		\vspace{12pt}
+		\vspace{12pt}
+		\vspace{12pt}
+		\noindent 
+		Jawab: \par
+		\noindent 
+		Eliminasi x dari persamaan (1) dan (2) diperoleh persamaan (4) \par
+		\noindent 
+		x + 2y – 3z = -1 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x3 $  $ $  $ $  $ $  $ $  $ $  $ $  $3x + 6y – 9z = -3 \par
+		\noindent 
+		3x – y + 2z = 7 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x1 $  $ $  $ $  $ $  $ $  $ $  $ $  $\underline{3x – y + $  $ $  $2z $  $ $  $= $  $ $  $7} $  $ $  \_  $ \par
+		\noindent 
+		$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $7y – 11z = -10 ………… (4) \par
+		\noindent 
+		Eliminasi x dari persamaan (1) dan (3) diperoleh persamaan (5) \par
+		\noindent 
+		x + 2y – 3z = -1 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x5 $  $ $  $ $  $ $  $ $  $ $  $ $  $5x + 10y – 15z = -5 \par
+		\noindent 
+		5x + 3y + 2z = 2 $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  \vert  $ x1 $  $ $  $ $  $ $  $ $  $ $  $ $  $5\underline{x + 3y - $  $ $  $4z $  $ $  $ $  $ $  $ $  $= $  $ $  $2} $  $ $  \_  $ \par
+		\noindent 
+		$  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $ $  $7y – 11z = -7 ………..… (5) \par
+		\noindent 
+		Persamaan (4) dan persamaan (5) menyatakan bahwa persamaan tersebut tidak konsisten (sesuatu yang tak mungkin terjadi), sehingga dapat dikatakan bahwa SPLTV tersebut tidak mempunyai penyelesaian. \par
+		\vspace{12pt}
+		\noindent 
+		\textbf{Contoh 1} \par
+		\noindent 
+		Asti dan Anton bekerja pada sebuah perusahaan sepatu. Asti dapat membuat tiga pasang sepatu setiap jam dan Anton dapat membuat empat pasang sepatu setiap jam. Jumlah jam bekerja Asti dan Anton 16 jam sehari, dengan banyak sepatu yang dapat dibuat 55 pasang. Jika banyaknya jam bekerja keduanya tidak sama, tentukan lama bekerja Asti dan Anton. \par
+		\noindent 
+		\textbf{\textit{Penyelesaian:}} \par
+		\noindent 
+		Kita misalkan lama kerja Asti = x dan lama kerja Anton = y, maka: \par
+		\noindent 
+		x + y = 16 \par
+		\noindent 
+		3x + 4y = 55 \par
+		\noindent 
+		Selanjutnya, selesaikan dengan menggunakan salah satu metode penyelesaian, misalnya dengan $  $metode cepat, maka: \par
+		\noindent 
+		=> y = (1 . 55 – 16 . 3)/(1 . 4 – 1 . 3) \par
+		\noindent 
+		=> y = (55 – 48)/(4 – 2) \par
+		\noindent 
+		=> y = 7 \par
+		\noindent 
+		Substitusi nilai y = 7 ke persamaan x + y = 16, maka: \par
+		\noindent 
+		=> x + y = 16 \par
+		\noindent 
+		=> x + 7 = 16 \par
+		\noindent 
+		=> x = 16 – 7 \par
+		\noindent 
+		=> x = 9 \par
+		\noindent 
+		Dengan demikian, lama bekerja Asti adalah 9 jam dan Anton adalah 7 jam. \par
+		\vspace{12pt}
+		\noindent 
+		\textbf{Contoh 2} \par
+		\noindent 
+		Sebuah toko kelontong menjual dua jenis beras sebanyak 50 kg. Harga 1 kg beras jenis I adalah Rp 6.000,00 dan jenis II adalah Rp 6.200,00/kg. Jika harga beras seluruhnya Rp 306.000,00 maka tentukan jumlah beras jenis I dan beras jenis II yang dijual. \par
+		\noindent 
+		\textit{Penyelesaian:} \par
+		\noindent 
+		Kita misalkan jumlah beras jenis I = x dan jumlah beras jenis I = y, maka: \par
+		\noindent 
+		x + y = 50 \par
+		\noindent 
+		6000x + 6200y = 306000 \par
+		\noindent 
+		Selanjutnya, selesaikan dengan menggunakan salah satu metode penyelesaian, misalnya dengan $  $\textbf{metode cepat}, maka: \par
+		\noindent 
+		=> y = (1 . 306000 – 50 . 6000)/(1 . 6200 – 1 . 6000) \par
+		\noindent 
+		=> y = (306000 – 300000)/(6200 – 6000) \par
+		\noindent 
+		=> y = 6000/200 \par
+		\noindent 
+		=> y = 30 \par
+		\noindent 
+		Substitusi nilai y = 30 ke persamaan x + y = 50, maka: \par
+		\noindent 
+		=> x + y = 50 \par
+		\noindent 
+		=> x + 30 = 50 \par
+		\noindent 
+		=> x = 50 – 30 \par
+		\noindent 
+		=> x = 20 \par
+		\noindent 
+		Dengan demikian, jumlah beras jenis I dan beras jenis II yang dijual adalah 20 kg dan 30 kg. \par
+		\vspace{12pt}
+		\noindent 
+		\textbf{Contoh 3} \par
+		\noindent 
+		Ahmad membeli di sebuah Toko peralatan sekolah berupa 4 buah penggaris, 6 buah buku tulis dan 2 buah pena dengan menghabiskan biaya sebesar Rp 19.000,00. Di Toko yang sama Sulaiman berbelanja 3 buah buku tulis dan sebuah penggaris dengan menghabiskan uang Rp 7.000,00. Jika harga sebuah penggaris adalah Rp 1.000,00 maka berpakah harga sebuah pena? Untuk menyelesaikan kasus diatas, kita dapat menggunakan konsep sistem persamaan tiga variabel.\vspace{\baselineskip}
+		\vspace{\baselineskip}
+		\textbf{Pembahasan}!\vspace{\baselineskip}
+		Dimisalkan bahwa;\vspace{\baselineskip}
+		X = harga sebuah penggaris\vspace{\baselineskip}
+		Y = harga sebuah buku\vspace{\baselineskip}
+		Z = harga sebuah pena \par
+		\noindent 
+		\textbf{Diketahui}:\vspace{\baselineskip}
+		4X + 6Y + 2Z~~~~~ = 19.000  $  $  $  $ $  $ persamaan (I)\vspace{\baselineskip}
+		3Y + X~~~~~~~~~~~~~~~ = 7.000  $  $  $  $  $  $ $  $~ persamaan (II) \par
+		\noindent 
+		X~~~~~~~~~~~~~~~~~~~~~~~~ = 1.000~~~~~~~~ persamaan (III)\vspace{\baselineskip}
+		\vspace{\baselineskip}
+		\textbf{Ditanya}:\vspace{\baselineskip}
+		Z = ? \par
+		\vspace{12pt}
+		\noindent 
+		\textbf{Dijawab}:\vspace{\baselineskip}
+		Kita selesaikan terlebih dahulu persamaan (II) dengan bantuan persamaan (III), untuk mengetahui nilai Y (harga sebuah buku).\vspace{\baselineskip}
+		3Y + X~~~~~~~~~~~~~~~~~ = 7.000  $  $  $  $~ ( X = 1.000 )\vspace{\baselineskip}
+		3Y + 1.000  $  $  $  $  $  $  $  $  $  $ $  $ = 7.000\vspace{\baselineskip}
+		3Y~~~~~~~~~~~~~~~~~~~~~~~~ = 7.000 – 1.000\vspace{\baselineskip}
+		3Y  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $ $  $~ = 6.000\vspace{\baselineskip}
+		Y~~~~~~~~~~~~~~~~~~~~~~~~~~ = 6.000/3\vspace{\baselineskip}
+		Y  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $~ = 2.000~~~~~~~~ persamaan (IV)\vspace{\baselineskip}
+		\vspace{\baselineskip}
+		Kita lanjutkan untuk menyelesaikan persamaan (I) dengan bantuan persamaan (III) dan persamaan (IV) yang dihasilkan dari penghitungan di atas untuk mencari nilai Z (harga sebuah pena).\vspace{\baselineskip}
+		Kita sudah memiliki nilai;\vspace{\baselineskip}
+		Y  $  $  $  $= 2.000 dan,\vspace{\baselineskip}
+		X  $  $  $  $= 1.000.\vspace{\baselineskip}
+		\vspace{\baselineskip}
+		Maka,\vspace{\baselineskip}
+		4X + 6Y + 2Z~~~~~~~~~~~~~~~~~~~~~~~~ = 19.000\vspace{\baselineskip}
+		4(1.000) + 6(2.000) + 2Z~~~~~~~ = 19.000\vspace{\baselineskip}
+		4.000 + 12.000 + 2Z  $  $  $  $  $  $  $  $  $  $  $  $ $  $~ = 19.000\vspace{\baselineskip}
+		16.000 + 2Z~~~~~~~~~~~~~~~~~~~~~~~~~~~ = 19.000\vspace{\baselineskip}
+		2Z~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = 19.000 – 16.000\vspace{\baselineskip}
+		2Z $  $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = 3.000\vspace{\baselineskip}
+		Z~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = 3.000/2\vspace{\baselineskip}
+		Z~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = 1.500 \par
+		\noindent 
+		Sudah terjawab masing – masing nilai X, Y dan Z sebagai berikut;\vspace{\baselineskip}
+		X~~~ = 1.000\vspace{\baselineskip}
+		Y~~~ = 2.000\vspace{\baselineskip}
+		Z  $  $ $  $ = 1.500\vspace{\baselineskip}
+		Jadi, harga sebuah pena adalah Rp 1.500,00 \par
+		\vspace{12pt}
+		\vspace{12pt}
 \noindent \textbf{CONTOH SOAL PERSAMAAN LINEAR 3 VARIABEL}
 
 \noindent \textbf{}
